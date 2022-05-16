@@ -1,0 +1,43 @@
+<mat-toolbar color="primary">
+    <h1>Component Lifecycle Hooks</h1>
+</mat-toolbar>
+
+<mat-tab-group mat-align-tabs="start">
+
+    <mat-tab label="Peek-a-boo: (most) lifecycle hooks">
+        <div class="tab-content">
+            <peek-a-boo-parent></peek-a-boo-parent>
+        </div>
+    </mat-tab>
+    <mat-tab label="OnChanges">
+        <div class="tab-content">
+            <on-changes-parent></on-changes-parent>
+        </div>
+    </mat-tab>
+    <mat-tab label="DoCheck">
+        <div class="tab-content">
+            <do-check-parent></do-check-parent>
+        </div>
+    </mat-tab>
+    <mat-tab label="AfterViewInit & AfterViewChecked">
+        <div class="tab-content">
+            <after-view-parent></after-view-parent>
+        </div>
+    </mat-tab>
+    <mat-tab label="AfterContentInit & AfterContentChecked">
+        <div class="tab-content">
+            <after-content-parent></after-content-parent>
+        </div>
+    </mat-tab>
+    <mat-tab label="Spy: directive with OnInit & OnDestroy">
+        <div class="tab-content">
+            <spy-parent></spy-parent>
+        </div>
+    </mat-tab>
+    <mat-tab label="Counter: OnChanges + Spy directive">
+        <div class="tab-content">
+            <counter-parent></counter-parent>
+        </div>
+    </mat-tab>
+
+</mat-tab-group>

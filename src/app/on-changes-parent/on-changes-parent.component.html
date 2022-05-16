@@ -1,0 +1,17 @@
+<h2 matTitle>{{title}}</h2>
+
+<table>
+  <tr>
+    <td>Power: </td>
+    <td><input matInput [(ngModel)]="power"></td>
+  </tr>
+  <tr>
+    <td>Hero.name: </td>
+    <td><input matInput [(ngModel)]="hero.name"></td>
+  </tr>
+</table>
+<p>
+  <button mat-flat-button color="primary" (click)="reset()">Reset Log</button>
+</p>
+
+<on-changes [hero]="hero" [power]="power"></on-changes>

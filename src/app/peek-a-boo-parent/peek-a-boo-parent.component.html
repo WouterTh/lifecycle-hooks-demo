@@ -1,0 +1,15 @@
+<h2 matTitle>Peek-A-Boo</h2>
+
+<button mat-flat-button color="primary" (click)="toggleChild()">
+  {{hasChild ? 'Destroy' : 'Create'}} PeekABooComponent
+</button>
+
+<button mat-flat-button (click)="updateHero()" *ngIf="hasChild">Update Hero</button>
+
+<div class="container">
+  <peek-a-boo *ngIf="hasChild" [name]="heroName">
+  </peek-a-boo>
+</div>
+
+<h4 matSubheading>-- Lifecycle Hook Log --</h4>
+<div *ngFor="let msg of hookLog">{{msg}}</div>
